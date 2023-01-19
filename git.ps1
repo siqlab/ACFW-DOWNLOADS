@@ -1,6 +1,7 @@
 $commitName = $args[0]
 
 try {
+    Set-Location ~\Documents\ACFW-DOWNLOADS
     git -c http.sslVerify=false pull
     git add .
     git commit -m "Added Downloaded Files of Test: $commitName"

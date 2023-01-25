@@ -8,6 +8,7 @@ if ($commitName.Length -gt 0) {
         git add .
         git commit -m "Added Downloaded Files of Test: $commitName"
         git -c http.sslVerify=false push
+        Set-Location ~\Documents\malware-downloader-powershell
     }
     catch {
         Write-Output "--ERROR--Exception Caught in git.ps1"
